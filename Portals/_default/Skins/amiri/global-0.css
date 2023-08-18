@@ -1,5 +1,7 @@
 
-
+ul.fixed-widget-list {
+	display: none !important;
+}
 	
 .dng-main{
 	 background-color:#FFFFFF;  	}
@@ -809,7 +811,7 @@ textarea,
 /*page title*/
 .page-title-bg{
 			background-color:#f2f2f2; 
-				background-image:url("/Portals/0/ThemePluginPro/uploads/2019/11/29/windmills-bg.jpg");
+				background-image:url("/Visual/windmills-bg.jpg");
 		background-attachment: scroll;
 		background-position: center center; 
 		background-repeat: no-repeat;
