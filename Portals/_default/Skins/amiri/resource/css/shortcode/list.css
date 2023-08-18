@@ -1,0 +1,154 @@
+
+ul {
+	margin-left: 20px;
+	list-style-type: disc;
+}
+ul,
+ol {
+	padding: 0;
+	-webkit-padding-start: 0;
+}
+ol {
+	margin-left: 1.6em;
+	list-style-position: outside;
+}
+ol li {
+	padding-left: 6px;
+}
+.list-numbers ul,
+.list-numbers ol {
+	counter-reset: custom-counter;
+	list-style: none;
+	margin: 0;
+}
+.list-icon ul,
+.list-icon ol {
+	list-style: none;
+	margin: 0;
+}
+.list-numbers li,
+.list-icon li {
+	position: relative;
+}
+.list-numbers li:before,
+.list-icon li i,
+.list-icon li em {
+	position: absolute;
+	top: 10px;
+	left: 0;
+	color: #2c5cda;
+	line-height: 1;
+	display: inline-block;
+}
+.list-numbers li:before {
+	content: counter(custom-counter);
+	counter-increment: custom-counter;
+	font-family: 'Arial';
+	font-weight: bold;
+}
+.list-numbers.em-border li:before,
+.list-icon.em-border li i,
+.list-icon.em-border li em {
+	width: 30px;
+	height: 30px;
+	line-height: 28px;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	display: inline-block;
+	border: 1px solid #2c5cda;
+	text-align: center;
+}
+.list-numbers.em-background li:before,
+.list-icon.em-background li i,
+.list-icon.em-background li em {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	background-color: #2c5cda;
+	color: #FFF;
+}
+.am-list.list-none ul {
+	margin-left: 0;
+	list-style-type: none;
+}
+.am-list.line-solid li,
+.am-list.line-dashed li,
+.am-list.line-dotted li {
+	border-bottom: 1px solid #dcdcdc;
+}
+.am-list.line-dashed li {
+	border-bottom-style: dashed;
+}
+.am-list.line-dotted li {
+	border-bottom-style: dotted;
+}
+.am-list li {
+    font-size: 16px;
+    line-height: 36px;
+}
+.am-list.list-numbers li {
+	padding-left: 20px;
+}
+.am-list.list-icon li {
+	padding-left: 22px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.am-list.list-numbers li:before{
+	font-size: 1em;
+}
+.am-list.list-icon li i,
+.am-list.list-icon li em {
+    font-size: 0.8em;
+}
+.am-list.list-icon li .lnr-check{
+	font-weight: 600;
+}
+.am-list.em-border li:before,
+.am-list.em-border li i,
+.am-list.em-border li em,
+.am-list.em-background li:before,
+.am-list.em-background li i,
+.am-list.em-background li em {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+    top: 3px;
+}
+.am-list.em-border li:before,
+.am-list.em-border li i,
+.am-list.em-border li em {
+	line-height: 28px;
+}
+.am-list.em-border li,
+.am-list.em-background li {
+	padding-left: 41px;
+	margin-bottom: 6px;
+}
+.am-list.line-solid li,
+.am-list.line-dashed li,
+.am-list.line-dotted li {
+	margin-bottom: 14px;
+	padding-bottom: 14px;
+}
+
+
+
+
+
+
+.list-numbers.position-middle li:before,
+.list-icon.position-middle li i,
+.list-icon.position-middle li em {
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+

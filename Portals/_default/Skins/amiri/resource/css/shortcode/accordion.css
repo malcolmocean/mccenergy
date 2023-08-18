@@ -1,0 +1,395 @@
+/*accordion*/
+
+.panel-group {
+    margin-bottom: 0px;
+}
+
+.am-accordion .panel-collapse {
+    display: none;
+}
+
+.am-accordion .panel:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.am-accordion .panel-heading a>.icon {
+    margin-right: 19px;
+    font-size: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 2px;
+}
+
+.am-accordion .panel-heading .arrow:after,
+.am-accordion .panel-heading .arrow:before {
+    content: "";
+}
+
+.am-accordion .panel-heading a,
+.am-accordion .panel-heading a:hover,
+.am-accordion .panel-heading .arrow,
+.am-accordion .panel-heading .arrow:after,
+.am-accordion .panel-heading .arrow:before {
+    -webkit-transition: all ease-in 200ms;
+    transition: all ease-in 200ms;
+}
+
+.am-accordion .panel-heading {
+    background-color: transparent;
+    padding: 0;
+    position: relative;
+}
+
+.am-accordion .panel-heading>* {
+    margin: 0;
+    line-height: 1.2em;
+}
+
+.am-accordion .panel-heading a {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: inherit;
+    display: block;
+    text-decoration: none;
+}
+
+.am-accordion .panel-heading a:hover {
+    text-decoration: none;
+}
+
+.am-accordion .panel-heading .arrow {
+    position: absolute;
+    top: 1px;
+    left: 0;
+}
+
+.am-accordion .panel+.panel {
+    margin-top: 14px;
+}
+
+.am-accordion .panel-heading+.panel-collapse>.panel-body {
+    border: none;
+}
+
+.am-accordion .panel-body p:last-child {
+    margin: 0;
+}
+
+/*accordion01*/
+
+.am-accordion01 .panel-body {
+    padding-left: 61px;
+    padding-top: 12px;
+}
+
+.am-accordion01 .panel-heading a {
+    color: #fff !important;
+    padding: 0px 23px 0px 61px;
+}
+
+.am-accordion01 .panel-heading a.collapsed {
+    color: #424242 !important;
+}
+
+.am-accordion01 .panel-heading a.collapsed:hover {
+    color: #2c5cda !important;
+}
+
+.am-accordion01 .panel+.panel {
+    margin-top: 0px;
+}
+
+.am-accordion01 .panel-heading .arrow {
+    height: 100%;
+    width: 62px;
+}
+
+.am-accordion01 .panel-heading .arrow:after,
+.am-accordion01 .panel-heading .arrow:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+}
+
+.am-accordion01 .panel-heading .arrow:after {
+    width: 3px;
+    height: 17px;
+    background: #fff !important;
+    margin: -10px 0 0 -1px;
+    opacity: 0;
+}
+
+.am-accordion01 .panel-heading .arrow:before {
+    width: 17px;
+    height: 3px;
+    background: #fff !important;
+    margin: -3px 0 0 -8px;
+}
+
+.am-accordion01 .panel-heading a.collapsed .arrow:before,
+.am-accordion01 .panel-heading a.collapsed .arrow:after {
+    background: #fd4fa5 !important;
+    opacity: 1;
+}
+
+.am-accordion01 .panel-body {
+    color: #fff !important;
+    padding-right:50px;
+}
+
+.am-accordion01 .accordion-item {
+    padding: 26px 0 23px 0px;
+}
+
+.am-accordion01 .accordion-item {
+    background: transparent;
+    border-bottom: 1px solid #ebebeb;
+    transition: background 300ms;
+}
+
+.am-accordion01 .accordion-item.active {
+    background: rgba(44, 92, 218, 1);
+    border-bottom: none;
+    -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 12px rgba(0, 0, 0, .3);
+}
+
+
+
+
+/**********accordion02**********/
+
+.am-accordion02 .panel-body {
+    padding-left: 39px;
+    padding-top: 12px;
+    line-height: 1.75;
+}
+
+.am-accordion02 .panel-heading a {
+    color: #fff !important;
+    padding: 0px 23px 0px 39px;
+    background: transparent !important;
+}
+
+.am-accordion02 .panel+.panel {
+    margin-top: 0px;
+}
+
+.am-accordion02 .panel-heading .arrow {
+    height: 100%;
+    width: 40px;
+}
+
+.am-accordion02 .panel-heading .arrow:after,
+.am-accordion02 .panel-heading .arrow:before {
+    position: absolute;
+    top: 50%;
+    left: 9px;
+    z-index: 1;
+}
+
+.am-accordion02 .panel-heading .arrow:after {
+    width: 3px;
+    height: 17px;
+    background: #f8f363 !important;
+    margin: -10px 0 0 -1px;
+    opacity: 0;
+}
+
+.am-accordion02 .panel-heading .arrow:before {
+    width: 17px;
+    height: 3px;
+    background: #f8f363 !important;
+    margin: -3px 0 0 -8px;
+}
+
+.am-accordion02 .panel-heading a.collapsed .arrow:before,
+.am-accordion02 .panel-heading a.collapsed .arrow:after {
+    background: #f8f363 !important;
+    opacity: 1;
+}
+
+.am-accordion02 .panel-body {
+    color: #fff !important;
+}
+
+.am-accordion02 .accordion-item {
+    padding: 26px 0 23px 0px;
+}
+
+.am-accordion02 .accordion-item {
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+
+/**********accordion03**********/
+
+.am-accordion03 .panel+.panel {
+    margin-top: 19px;
+}
+
+.am-accordion03 .panel-heading a {
+    position: relative;
+    color: #424242;
+    padding: 15px 23px 17px 66px;
+    margin: 0;
+    border-radius: 3px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+}
+
+.am-accordion03 .panel-heading a.collapsed {
+    color: #424242;
+    background-color: #fff;
+}
+.am-accordion03 .panel-heading a.collapsed .icon{
+    color:#2c5cda;
+}
+
+.am-accordion03 .panel-heading a:hover,
+.am-accordion03 .panel-heading a {
+    background-color: #20a3f0;
+    color: #fff;
+}
+
+.am-accordion03 .panel-heading a:hover .icon,
+.am-accordion03 .panel-heading a .icon {
+    color: #fff;
+    position: absolute;
+    left: 17px;
+    top: 15px;
+    -webkit-transition: all ease-in 200ms;
+    transition: all ease-in 200ms;
+}
+.am-accordion03 .panel-heading a:hover .icon{
+    color: #fff!important;
+}
+
+.am-accordion03 .panel-heading .arrow {
+    left: auto;
+    right: 0;
+    height: 100%;
+    width: 40px;
+}
+
+.am-accordion03 .panel-heading .arrow:after {
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -4px 0 0 -4px;
+    border-right: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.am-accordion03 .panel-heading .collapsed:hover .arrow:after {
+    border-right-color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+
+.am-accordion03 .panel-heading a.collapsed .arrow:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    border-right-color: #5b5b5b;
+    border-bottom-color: #5b5b5b;
+}
+
+.am-accordion03 .panel-body {
+    position: relative;
+    margin: 32px 30px 21px 30px;
+    padding: 34px 38px 34px 30px;
+    background: #fff;
+    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+}
+
+.am-accordion03 .panel-body:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -9px;
+    left: 65px;
+    background: #fff;
+    width: 18px;
+    height: 18px;
+    transform: rotate(45deg);
+}
+
+/**********accordion04**********/
+
+.am-accordion04 .panel-body {
+    padding-top: 37px;
+    padding-bottom: 22px;
+}
+
+.am-accordion04 .panel-body p:last-child {
+    margin-bottom: 0;
+}
+
+.am-accordion04 .panel-heading a {
+    padding-right: 40px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.am-accordion04 .panel+.panel {
+    margin-top: 0px;
+}
+
+.am-accordion04 .panel-heading .arrow {
+    left: auto;
+    right: 0;
+    height: 100%;
+    width: 40px;
+    background: transparent !important;
+}
+
+.am-accordion04 .panel-heading .arrow:after {
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -4px 0 0 -4px;
+    border-right: 1px solid #2c5cda;
+    border-bottom: 1px solid #2c5cda;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+.am-accordion04 .panel-heading a.collapsed .arrow:after {
+    border-right-color: #555;
+    border-bottom-color: #555;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.am-accordion04 .panel-heading .collapsed:hover .arrow:after {
+    border-right-color: #2c5cda;
+    border-bottom-color: #2c5cda;
+}
+
+.am-accordion04 .accordion-item {
+    padding: 31px 0 33px 0px;
+}
+
+.am-accordion04 .accordion-item {
+    border-bottom: 1px solid #ebebeb;
+}
+
+.am-accordion04 .accordion-item:last-child {
+    border: none;
+}
+
+.am-accordion04 .panel-heading a.collapsed {
+    color: #555;
+}
+
+.am-accordion04 .panel-heading a:hover,
+.am-accordion04 .panel-heading a {
+    color: #2c5cda;
+}

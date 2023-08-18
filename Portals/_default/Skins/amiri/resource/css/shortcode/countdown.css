@@ -1,0 +1,291 @@
+[class*="am-countdown-"] .soon-slot{
+    letter-spacing: 0;
+    text-indent: 0;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+[class*="am-countdown-"] .soon-slot .soon-slot-inner{
+    height: auto;
+    width: auto !important;
+}
+[class*="am-countdown-"] .soon-slot .soon-slot-bounding{
+    padding: 0 !important;
+}
+[class*="am-countdown-"] .soon-flip-inner{
+    height: auto;
+}
+
+
+.am-countdown-01.soon {
+    font-family: "Montserrat";
+    padding: 0;
+}
+
+.am-countdown-01 .soon-group-sub {
+    margin: 0px 37px;
+}
+
+.am-countdown-01 .soon-group::before,
+.am-countdown-01 .soon-group::after {
+    content: "";
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    right: 100%;
+    top: 52px;
+    margin-right: 30px;
+}
+
+.am-countdown-01 .soon-group::after {
+    top: 88px;
+}
+
+.am-countdown-01 .soon-group:first-child::before,
+.am-countdown-01 .soon-group:first-child::after {
+    content: none;
+}
+
+.am-countdown-01 .soon-group-sub:first-child {
+    margin-left: 0 !important;
+}
+
+.am-countdown-01 .soon-group-sub:last-child {
+    margin-right: 0 !important;
+}
+
+.am-countdown-01 .soon-group-inner {
+    margin: 0!important;
+}
+
+.am-countdown-01 .soon-text {
+    min-width: auto;
+}
+
+.am-countdown-01 .soon-group .soon-value {
+    font-size: 90px;
+    font-weight: 500;
+    margin: 0!important;
+}
+
+.am-countdown-01 .soon-group .soon-label {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0!important;
+    position: absolute;
+    top: 0;
+    left: 2px;
+}
+
+@media (max-width: 1199px) {
+    .am-countdown-01 .soon-group .soon-value {
+        font-size: 72px;
+    }
+    .am-countdown-01 .soon-group .soon-label {
+        font-size: 14px;
+        top: 7px;
+    }
+    .am-countdown-01 .soon-group-sub {
+        margin: 0 27px !important;
+    }
+    .am-countdown-01 .soon-group::before,
+    .am-countdown-01 .soon-group::after {
+        width: 10px;
+        height: 10px;
+        top: 50px;
+        margin-right: 22px;
+    }
+    .am-countdown-01 .soon-group::after {
+        top: 71px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .am-countdown-01.soon {
+        text-align: center !important;
+    }
+    .am-countdown-01 .soon-group .soon-value {
+        font-size: 72px;
+    }
+    .am-countdown-01 .soon-group .soon-label {
+        font-size: 14px;
+        top: 7px;
+    }
+    .am-countdown-01 .soon-group-sub {
+        margin: 0 27px !important;
+    }
+    .am-countdown-01 .soon-group::before,
+    .am-countdown-01 .soon-group::after {
+        width: 10px;
+        height: 10px;
+        top: 50px;
+        margin-right: 22px;
+    }
+    .am-countdown-01 .soon-group::after {
+        top: 71px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .am-countdown-01 .soon-group .soon-value {
+        font-size: 36px;
+    }
+    .am-countdown-01 .soon-group .soon-label {
+        top: 0;
+        left: 0;
+        font-size: 12px;
+    }
+    .am-countdown-01 .soon-group-sub {
+        margin: 0 17px !important;
+        padding-top: 17px;
+    }
+    .am-countdown-01 .soon-group::before,
+    .am-countdown-01 .soon-group::after {
+        width: 8px;
+        height: 8px;
+        top: 33px;
+        margin-right: 13px;
+    }
+    .am-countdown-01 .soon-group::after {
+        top: 50px;
+    }
+}
+
+.am-countdown-02.soon {
+    font-family: "Montserrat";
+    padding: 0;
+}
+
+.am-countdown-02 .soon-group-sub {
+    margin: 0px 28px;
+    line-height: 1;
+}
+
+.am-countdown-02 .soon-group::after {
+    content: ":";
+    position: absolute;
+    right: 100%;
+    bottom: 28px;
+    margin-right: 24px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.am-countdown-02 .soon-group:first-child::after {
+    content: none;
+}
+
+.am-countdown-02 .soon-group-sub:first-child {
+    margin-left: 0;
+}
+
+.am-countdown-02 .soon-group-sub:last-child {
+    margin-right: 0;
+}
+
+.am-countdown-02 .soon-group-inner {
+    margin: 0!important;
+}
+
+.am-countdown-02 .soon-text {
+    min-width: auto;
+    line-height: 1;
+    text-align: center;
+}
+
+.am-countdown-02 .soon-group .soon-value {
+    font-size: 60px;
+    font-weight: 600;
+    margin: 0!important;
+    line-height: 1;
+}
+
+.am-countdown-02 .soon-group .soon-label {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 2px 0 0!important;
+}
+
+
+@media only screen and (max-width:767px) {
+    .am-countdown-02 .soon-group .soon-value {
+        font-size: 28px !important;
+    }
+    .am-countdown-02 .soon-group-sub {
+        margin: 0 6px !important;
+    }
+    .am-countdown-02 .soon-group::after{
+        margin-right: 4px !important;
+    }
+}
+
+
+.am-countdown-03{
+    color: #ffffff;
+}
+.am-countdown-03.soon {
+    font-family: "Montserrat";
+    padding: 0;
+}
+.am-countdown-03 .soon-group .soon-value {
+    font-size: 40px;
+}
+.am-countdown-03 .soon-flip-card{
+    border-radius: 3px;
+    overflow: hidden;
+}
+.am-countdown-03 .soon-flip-face,
+.am-countdown-03 .soon-flip-fallback{
+    background: #2c5cda;
+}
+.am-countdown-03 .soon-group .soon-label {
+    font-size: 16px;
+    line-height: 28px;
+    color: #666666;
+    margin: 3px 0 0;
+}
+
+
+@media only screen and (max-width:767px) {
+    .am-countdown-03 .soon-group .soon-value{
+        font-size: 30px;
+    }
+    .am-countdown-03[data-layout*=group] .soon-group-sub>.soon-group-inner{
+        margin: 0 .125em;
+    }
+}
+
+
+
+
+.am-countdown-04{
+    color: #424242;
+}
+.am-countdown-04.soon {
+    font-family: "Montserrat";
+    padding: 0;
+}
+.am-countdown-04 .soon-group .soon-value {
+    font-size: 40px;
+}
+.am-countdown-04 .soon-group .soon-label {
+    font-size: 16px;
+    color: #666666;
+    margin: 3px 0 0;
+}
+.am-countdown-04 .soon-ring-progress {
+    background-color: #e7e7e7;
+}
+@media only screen and (max-width: 767px) {
+    .am-countdown-04 .soon-group .soon-value {
+        font-size: 30px;
+    }
+    .am-countdown-04>.soon-group{
+        white-space: normal;
+    }
+    .am-countdown-04[data-visual] .soon-group-sub{
+        display: inline-block;
+    }
+}

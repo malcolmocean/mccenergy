@@ -1,0 +1,11 @@
+﻿ #row-246645{background-image:url("/Portals/0/ThemePluginPro/uploads/2019/11/29/windmills-bg.jpg");background-repeat:no-repeat;background-size:cover;background-position:center center!important;}#About{background-color:#f2f2f2!important;}#row-534460{background-image:url("/Portals/0/ThemePluginPro/uploads/2019/12/2/solar-bg-1.1.jpg");background-repeat:no-repeat;background-size:cover;background-position:center center!important;}#row-783845{background-color:#f2f2f2!important;}#row-803315{background-image:url("/Portals/0/ThemePluginPro/uploads/2019/12/2/solar-bg-2.jpg");background-repeat:no-repeat;background-size:cover;background-position:center center!important;}#Features{background-color:#f2f2f2!important;}#row-552627{background-image:url("/Portals/0/ThemePluginPro/uploads/2019/12/2/solar-bg-3.jpg");background-repeat:no-repeat;background-size:cover;background-position:center center!important;}#row-552627{position:relative}#row-552627:before{
+				content:"";
+				position: absolute;
+				top:0;
+				left:0;
+				right:0;
+				bottom:0;
+				display: block;
+				pointer-events:none;
+				background-color:rgba(0,0,0,0.66);
+			}

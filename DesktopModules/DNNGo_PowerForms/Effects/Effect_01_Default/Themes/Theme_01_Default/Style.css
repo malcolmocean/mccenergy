@@ -1,0 +1,963 @@
+.dg-form-content-box.form-line-load{
+	opacity: 0;
+}
+
+@media only screen and (max-width:991px) {
+	.dg-form-content-box{
+		width: 100%!important;
+	}
+}
+
+/*form content*/
+.dg-form-content {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: left;
+}
+.dg-form-content > li{
+	float: left;
+}
+.dg-form-content:after ,
+.dg-form-content .form_input:after {
+	clear:both;
+	content:".";
+	height:0px;
+	font-size:0px;
+	visibility:hidden;
+	display:block;
+}
+.dg-form-content * {
+-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+		box-sizing: border-box;
+}
+.dg-form-content  *:before,
+.dg-form-content  *:after {
+-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+		box-sizing: border-box;
+}
+
+.dg-form-content .form-control-wrap {
+	display: block;
+	
+	list-style: none;
+	position: relative;
+}
+
+.dg-form-content .wpcf7-submit {
+	margin: 12px 0;
+}
+
+.dg-form-content .form-control-wrap input[type=text],
+.dg-form-content .form-control-wrap input[type=email],
+.dg-form-content .form-control-wrap input[type=url],
+.dg-form-content .form-control-wrap input[type=tel],
+.dg-form-content .form-control-wrap input[type=number],
+.dg-form-content .form-control-wrap input[type=date],
+.dg-form-content .form-control-wrap select,
+.dg-form-content .form-control-wrap textarea {
+	background: none;
+	width: 100%;
+	height: 50px;
+	outline: none;
+	border: 1px solid #d5d5d5;
+	padding: 11px 8px;
+	border-radius:0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	margin: 0;
+	-webkit-appearance: none;
+}
+.dg-form-content .form-control-wrap select[multiple],
+.dg-form-content .form-control-wrap select[size]{
+	height: auto!important;
+	padding: 5px 0;
+}
+.dg-form-content .form-control-wrap select[multiple] option,
+.dg-form-content .form-control-wrap select[size] option{
+	padding: 4px 8px;
+}
+.dg-form-content .form-control-wrap textarea {
+	height: auto;
+	overflow-x: hidden;
+}
+
+.dg-form-content label {
+	color: #424242;
+	font-size: 15px;
+	font-weight: normal;
+	margin: 0;
+}
+.dg-form-content label:not(.fixlabel){
+	margin-top: -10px;
+}
+
+.dg-form-content input,
+.dg-form-content textarea {
+	vertical-align: middle;
+}
+
+.dg-form-content .form-control-wrap>input[type=checkbox] {
+	margin-top: 12px;
+}
+
+.dg-form-content .first {
+	margin: 0;
+}
+
+.dg-form-content .form-control-wrap input[type=file] {
+	margin-top: 13px;
+}
+
+.dg-form-content.light .form-control-wrap select option {
+	color: #666;
+}
+
+.dg-form-content .wpcf7-submit:disabled,
+.dg-form-content .wpcf7-submit:disabled:hover {
+	cursor: not-allowed;
+}
+
+.dg-form-content+div.wpcf7-response-output {
+	padding-top: 0.7em;
+	padding-bottom: 0.7em;
+}
+
+.dg-form-content.light+div.wpcf7-response-output {
+	color: #FFF;
+}
+
+.dg-form-content.size-large .form-control-wrap input[type=text],
+.dg-form-content.size-large .form-control-wrap input[type=email],
+.dg-form-content.size-large .form-control-wrap input[type=url],
+.dg-form-content.size-large .form-control-wrap input[type=tel],
+.dg-form-content.size-large .form-control-wrap input[type=number],
+.dg-form-content.size-large .form-control-wrap input[type=date],
+.dg-form-content.size-large .form-control-wrap select {
+	height: 60px;
+	padding: 15px 15px;
+}
+
+.dg-form-content.size-large .wpcf7-checkbox,
+.dg-form-content.size-large .wpcf7-radio {
+	padding-top: 15px;
+}
+
+.dg-form-content.size-large .form-control-wrap>input[type=checkbox],
+.dg-form-content.size-large .form-control-wrap input[type=file] {
+	margin-top: 15px;
+}
+
+.dg-form-content.size-large .form-control-wrap {
+	padding: 15px 0;
+}
+
+.dg-form-content.size-large .wpcf7-submit {
+	margin: 15px 0;
+}
+
+.dg-form-content.size-small .form-control-wrap input[type=text],
+.dg-form-content.size-small .form-control-wrap input[type=email],
+.dg-form-content.size-small .form-control-wrap input[type=url],
+.dg-form-content.size-small .form-control-wrap input[type=tel],
+.dg-form-content.size-small .form-control-wrap input[type=number],
+.dg-form-content.size-small .form-control-wrap input[type=date],
+.dg-form-content.size-small .form-control-wrap select {
+	height: 40px;
+	padding: 7px 5px;
+}
+
+.dg-form-content.size-small .wpcf7-checkbox,
+.dg-form-content.size-small .wpcf7-radio {
+	padding-top: 6px;
+}
+
+.dg-form-content.size-small .form-control-wrap>input[type=checkbox],
+.dg-form-content.size-small .form-control-wrap input[type=file] {
+	margin-top: 10px;
+}
+
+.dg-form-content.size-small .form-control-wrap {
+	padding: 6px 0;
+}
+
+.dg-form-content.size-small .wpcf7-submit {
+	margin: 6px 0;
+}
+
+.dg-form-content.form-line .form-control-wrap {
+	padding: 20px 0 0px;
+}
+
+.dg-form-content.form-line .form-control-wrap input[type=text],
+.dg-form-content.form-line .form-control-wrap input[type=email],
+.dg-form-content.form-line .form-control-wrap input[type=url],
+.dg-form-content.form-line .form-control-wrap input[type=tel],
+.dg-form-content.form-line .form-control-wrap input[type=number],
+.dg-form-content.form-line .form-control-wrap input[type=date],
+.dg-form-content.form-line .form-control-wrap select,
+.dg-form-content.form-line .form-control-wrap textarea {
+	border: none;
+	border-bottom: 1px solid #c8c8c8;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+	height: 40px;
+}
+.dg-form-content.form-line .form-control-wrap > .form_input{
+	padding-top: 11px;
+}
+
+
+.dg-form-content.form-line .form-control-wrap > label {
+	position: absolute;
+}
+
+.dg-form-content.form-line .text-center label {
+	left: 50%;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+}
+
+.dg-form-content.form-line .wpcf7-quiz-label {
+	display: block;
+	margin-top: 15px;
+	margin-bottom: -8px;
+}
+
+.dg-form-content.form-line label.fixlabel {
+	top: 32px;
+	font-size: 15px;
+	pointer-events: none;
+	opacity: 1;
+}
+
+.dg-form-content.form-line label {
+	top: 8px;
+	font-size: 15px;
+	-moz-transition: all ease-in 200ms;
+	/* Firefox 4 */
+	-webkit-transition: all ease-in 200ms;
+	/* Safari and Chrome */
+	-o-transition: all ease-in 200ms;
+	/* Opera */
+	-ms-transition: all ease-in 200ms;
+	/* IE9? */
+	transition: all ease-in 200ms;
+}
+
+.dg-form-content.form-line label.valid {
+	top: 0px;
+	font-size: 13px;
+	color: #333333;
+	-moz-transition: all ease-in 200ms;
+	/* Firefox 4 */
+	-webkit-transition: all ease-in 200ms;
+	/* Safari and Chrome */
+	-o-transition: all ease-in 200ms;
+	/* Opera */
+	-ms-transition: all ease-in 200ms;
+	/* IE9? */
+	transition: all ease-in 200ms;
+}
+
+/* .dg-form-content.form-line .form-control-wrap label {
+	position: static;
+} */
+
+.dg-form-content.form-line .fixline:before {
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	width: 0;
+	border-bottom: 2px solid #b4b4b4;
+	-moz-transition: width ease-in 200ms;
+	/* Firefox 4 */
+	-webkit-transition: width ease-in 200ms;
+	/* Safari and Chrome */
+	-o-transition: width ease-in 200ms;
+	/* Opera */
+	-ms-transition: width ease-in 200ms;
+	/* IE9? */
+	transition: width ease-in 200ms;
+
+}
+
+.dg-form-content.form-line .fixline.valid:before {
+	width: 100%;
+}
+
+.dg-form-content.form-line .wpcf7-not-valid-tip {
+	position: absolute
+}
+
+
+.dg-form-content.form-border {}
+
+.dg-form-content.form-border > label {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	display: block;
+}
+
+.dg-form-content.form-background > label {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	display: block;
+}
+
+.dg-form-content.radius-3px .form-control-wrap input[type=text],
+.dg-form-content.radius-3px .form-control-wrap input[type=email],
+.dg-form-content.radius-3px .form-control-wrap input[type=url],
+.dg-form-content.radius-3px .form-control-wrap input[type=tel],
+.dg-form-content.radius-3px .form-control-wrap input[type=number],
+.dg-form-content.radius-3px .form-control-wrap input[type=date],
+.dg-form-content.radius-3px .form-control-wrap select,
+.dg-form-content.radius-3px textarea,
+.dg-form-content.radius-3px .wpcf7-form-control {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.dg-form-content.radius-6px .form-control-wrap input[type=text],
+.dg-form-content.radius-6px .form-control-wrap input[type=email],
+.dg-form-content.radius-6px .form-control-wrap input[type=url],
+.dg-form-content.radius-6px .form-control-wrap input[type=tel],
+.dg-form-content.radius-6px .form-control-wrap input[type=number],
+.dg-form-content.radius-6px .form-control-wrap input[type=date],
+.dg-form-content.radius-6px .form-control-wrap select,
+.dg-form-content.radius-6px textarea,
+.dg-form-content.radius-6px .wpcf7-form-control {
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+.dg-form-content.radius-10px .form-control-wrap input[type=text],
+.dg-form-content.radius-10px .form-control-wrap input[type=email],
+.dg-form-content.radius-10px .form-control-wrap input[type=url],
+.dg-form-content.radius-10px .form-control-wrap input[type=tel],
+.dg-form-content.radius-10px .form-control-wrap input[type=number],
+.dg-form-content.radius-10px .form-control-wrap input[type=date],
+.dg-form-content.radius-10px .form-control-wrap select,
+.dg-form-content.radius-10px textarea,
+.dg-form-content.radius-10px .wpcf7-form-control {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.dg-form-content.radius-3px .form-control-wrap input[type=text],
+.dg-form-content.radius-3px .form-control-wrap input[type=email],
+.dg-form-content.radius-3px .form-control-wrap input[type=url],
+.dg-form-content.radius-3px .form-control-wrap input[type=tel],
+.dg-form-content.radius-3px .form-control-wrap input[type=number],
+.dg-form-content.radius-3px .form-control-wrap input[type=date],
+.dg-form-content.radius-3px .form-control-wrap select,
+.dg-form-content.radius-3px textarea {
+	/* text-indent: 1em; */
+	padding-left: calc(1em + 8px);
+	padding-right: calc(1em + 8px);
+}
+
+.dg-form-content.radius-semi-circle .form-control-wrap input[type=text],
+.dg-form-content.radius-semi-circle .form-control-wrap input[type=email],
+.dg-form-content.radius-semi-circle .form-control-wrap input[type=url],
+.dg-form-content.radius-semi-circle .form-control-wrap input[type=tel],
+.dg-form-content.radius-semi-circle .form-control-wrap input[type=number],
+.dg-form-content.radius-semi-circle .form-control-wrap input[type=date],
+.dg-form-content.radius-semi-circle .form-control-wrap select,
+.dg-form-content.radius-semi-circle textarea,
+.dg-form-content.radius-semi-circle .wpcf7-form-control {
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+.dg-form-content.radius-semi-circle .form-control-wrap input[type=text],
+.dg-form-content.radius-semi-circle .form-control-wrap input[type=email],
+.dg-form-content.radius-semi-circle .form-control-wrap input[type=url],
+.dg-form-content.radius-semi-circle .form-control-wrap input[type=tel],
+.dg-form-content.radius-semi-circle .form-control-wrap input[type=number],
+.dg-form-content.radius-semi-circle .form-control-wrap input[type=date],
+.dg-form-content.radius-semi-circle .form-control-wrap select,
+.dg-form-content.radius-semi-circle textarea {
+	/* text-indent: 1em; */
+	padding-left: calc(1em + 8px);
+	padding-right: calc(1em + 8px);
+}
+
+.dg-form-content .wpcf7-submit.size-lg {
+	height: 50px;
+}
+
+.dg-form-content input[type=checkbox], 
+.dg-form-content input[type=radio]{
+ margin: 0 0 2px ;
+}
+
+.dg-form-home05.dg-form-content .form-control-wrap {
+	display: block;
+	padding: 0 0 20px 0;
+}
+
+.dg-form-menu-content {
+	position: relative;
+	border: 1px solid #bbbbbb;
+	background: transparent;
+	height: 35px;
+	border-radius: 3px;
+	padding: 0 115px 0 40px;
+}
+
+.dg-form-menu-content .lnr {
+	display: block;
+	background-color: #bbbbbb;
+	text-align: center;
+	line-height: 35px;
+	width: 35px;
+	color: #FFFF;
+	position: absolute;
+	left: -1px;
+	top: -1px;
+	border-radius: 3px 0 0 3px;
+}
+
+.dg-form-menu-content .wpcf7-text {
+	border: none;
+	background: transparent;
+	line-height: 35px;
+	height: 35px;
+	width: 100%;
+	outline: none;
+}
+
+.dg-form-menu-content .wpcf7-submit {
+	background-color: #20a3f0;
+	border: none;
+	text-align: center;
+	height: 35px;
+	width: 110px;
+	color: #FFFF;
+	position: absolute;
+	right: -1px;
+	top: -1px;
+	font-size: 13px;
+	border-radius: 0 3px 3px 0;
+}
+
+.dg-form-content.light .form-control-wrap select[multiple="multiple"] option{
+	color:inherit;
+}
+
+.form_submit.text-left {
+	text-align: left !important;
+}
+.form_submit.text-center {
+	text-align: center !important;
+}
+.form_submit.text-right {
+	text-align: right !important;
+}
+
+.Theme_01_Default .form_submit .submit_image{
+	border: none;
+}
+.Theme_01_Default .form_submit input{
+	vertical-align: middle;
+}
+
+.Theme_01_Default .form_submit .submit_but,
+.Theme_01_Default .form_submit .reset_but{
+	display: inline-block;
+	*display: inline;
+	padding: 4px 14px;
+	margin-bottom: 0;
+	*margin-left: .3em;
+	font-size: 14px;
+	line-height: 20px;
+	*line-height: 20px;
+	font-family:Arial;
+	color: #333333;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	vertical-align: middle;
+	cursor: pointer;
+	background-color: #f5f5f5;
+	*background-color: #e6e6e6;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+	background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+	background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+	background-repeat: repeat-x;
+	border: 1px solid #bbbbbb;
+	*border: 0;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+	border-bottom-color: #a2a2a2;
+	-webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+			border-radius: 4px;
+	filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+	filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+	*zoom: 1;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	   -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+			box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	border-color: #c5c5c5;
+	border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+  }
+  
+  .Theme_01_Default .form_submit .submit_but:hover,
+  .Theme_01_Default .form_submit .submit_but:active,
+  .Theme_01_Default .form_submit .submit_but.active,
+  .Theme_01_Default .form_submit .submit_but.disabled,
+  .Theme_01_Default .form_submit .submit_but[disabled],
+  .Theme_01_Default .form_submit .reset_but:hover,
+  .Theme_01_Default .form_submit .reset_but:active,
+  .Theme_01_Default .form_submit .reset_but.active,
+  .Theme_01_Default .form_submit .reset_but.disabled,
+  .Theme_01_Default .form_submit .reset_but[disabled]{
+	color: #333333;
+	background-color: #e6e6e6;
+	*background-color: #d9d9d9;
+  }
+
+  .Theme_01_Default .form_submit .submit_but:hover,
+  .Theme_01_Default .form_submit .reset_but:hover {
+	color: #333333;
+	text-decoration: none;
+	background-color: #e6e6e6;
+	*background-color: #d9d9d9;
+	/* Buttons in IE7 don't get borders, so darken on hover */
+  
+	background-position: 0 -15px;
+	-webkit-transition: background-position 0.1s linear;
+	   -moz-transition: background-position 0.1s linear;
+		 -o-transition: background-position 0.1s linear;
+			transition: background-position 0.1s linear;
+  }
+  .Theme_01_Default .form_submit .submit_but:focus,
+  .Theme_01_Default .form_submit .reset_but:focus {
+	outline: thin dotted #333;
+	outline: 5px auto -webkit-focus-ring-color;
+	outline-offset: -2px;
+  }
+  .Theme_01_Default .form_submit .submit_but.active,
+  .Theme_01_Default .form_submit .submit_but:active,
+  .Theme_01_Default .form_submit .reset_but.active,
+  .Theme_01_Default .form_submit .reset_but:active {
+	background-color: #e6e6e6;
+	background-color: #d9d9d9 \9;
+	background-image: none;
+	outline: 0;
+	-webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+	   -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+			box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  }
+  .Theme_01_Default .form_submit .submit_but.disabled,
+  .Theme_01_Default .form_submit .submit_but[disabled],
+  .Theme_01_Default .form_submit .reset_but.disabled,
+  .Theme_01_Default .form_submit .reset_but[disabled] {
+	cursor: default;
+	background-color: #e6e6e6;
+	background-image: none;
+	opacity: 0.65;
+	filter: alpha(opacity=65);
+	-webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+			box-shadow: none;
+  }
+  .Theme_01_Default [title="RadioButtonList"] label,
+  .Theme_01_Default [title="CheckBoxList"] label{
+	margin-right: 8px;
+  }
+
+  .Theme_01_Default .from-footer{
+	  margin: 0;
+	  width: 100%;
+  }
+
+
+@media only screen and (min-width: 768px) {
+
+	.Theme_01_Default.form-line-mode .dg-form-content{
+		display: table;
+		min-width: 100%;
+	}
+	.Theme_01_Default.form-line-mode .dg-form-content >li{
+		display: table-cell;
+		float: none;
+	}
+	.Theme_01_Default.form-line-mode .from-footer {
+		white-space: nowrap;
+		width: 1%;
+	}
+	.Theme_01_Default.form-line-mode .dg-form-content::after{
+		content: none;
+	}	
+}
+
+@media only screen and (max-width: 767px) {
+	.Theme_01_Default.form-line-mode .dg-form-content{
+		display: block;
+	}
+	.Theme_01_Default .dg-form-content >li{
+		display: block!important;
+		float: none;
+		width: 100%!important;
+	}
+}
+
+
+.Theme_01_Default.form-align-center{
+	margin: auto;
+}
+
+
+
+.formError { z-index: 1100; }
+.formError .formErrorContent { z-index: 1101; }
+.formError .formErrorArrow { z-index: 1102; }
+
+.ui-dialog .formError { z-index: 5000; }
+.ui-dialog .formError .formErrorContent { z-index: 5001; }
+.ui-dialog .formError .formErrorArrow { z-index: 5006; }
+
+.inputContainer {
+	position: relative;
+	float: left;
+}
+
+
+.formError {
+	position: absolute;
+	top: 300px;
+	left: 300px;
+	display: block;
+	cursor: pointer;
+	text-align: left;
+}
+
+.formError.inline {
+	position: relative;
+	top: 0;
+	left: 0;
+	display: inline-block;
+}
+
+.ajaxSubmit {
+	padding: 20px;
+	background: #55ea55;
+	border: 1px solid #999;
+	display: none;
+}
+
+.formError .formErrorContent {
+	width: 100%;
+	background: #ee0101;
+	position:relative;
+	color: #fff;
+	min-width: 150px;
+	font-size: 11px;
+	border: 2px solid #ddd;
+	box-shadow: 0 0 6px #000;
+	-moz-box-shadow: 0 0 6px #000;
+	-webkit-box-shadow: 0 0 6px #000;
+	-o-box-shadow: 0 0 6px #000;
+	padding: 4px 10px 4px 10px;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-o-border-radius: 6px;
+}
+
+.formError.inline .formErrorContent {
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	-o-box-shadow: none;
+	border: none;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	-o-border-radius: 0;
+}
+
+.greenPopup .formErrorContent {
+	background: #33be40;
+}
+
+.blackPopup .formErrorContent {
+	background: #393939;
+	color: #FFF;
+}
+
+.formError .formErrorArrow {
+	width: 15px;
+	margin: -2px 0 0 13px;
+	position:relative;
+}
+body[dir='rtl'] .formError .formErrorArrow,
+body.rtl .formError .formErrorArrow {
+	margin: -2px 13px 0 0;
+}
+
+.formError .formErrorArrowBottom {
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	-o-box-shadow: none;
+	margin: 0px 0 0 12px;
+	top:2px;
+}
+
+.formError .formErrorArrow div {
+	border-left: 2px solid #ddd;
+	border-right: 2px solid #ddd;
+	box-shadow: 0 2px 3px #444;
+	-moz-box-shadow: 0 2px 3px #444;
+	-webkit-box-shadow: 0 2px 3px #444;
+	-o-box-shadow: 0 2px 3px #444;
+	font-size: 0px;
+	height: 1px;
+	background: #ee0101;
+	margin: 0 auto;
+	line-height: 0;
+	font-size: 0;
+	display: block;
+}
+
+.formError .formErrorArrowBottom div {
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	-o-box-shadow: none;
+}
+
+.greenPopup .formErrorArrow div {
+	background: #33be40;
+}
+
+.blackPopup .formErrorArrow div {
+	background: #393939!important;
+	color: #FFF;
+}
+
+.formError .formErrorArrow .line10 {
+	width: 15px;
+}
+
+.formError .formErrorArrow .line9 {
+	width: 13px;
+}
+
+.formError .formErrorArrow .line8 {
+	width: 11px;
+}
+
+.formError .formErrorArrow .line7 {
+	width: 9px;
+}
+
+.formError .formErrorArrow .line6 {
+	width: 7px;
+}
+
+.formError .formErrorArrow .line5 {
+	width: 5px;
+}
+
+.formError .formErrorArrow .line4 {
+	width: 3px;
+}
+
+.formError .formErrorArrow .line3 {
+	width: 1px;
+	border-left: 2px solid #ddd;
+	border-right: 2px solid #ddd;
+	border-bottom: 0 solid #ddd;
+}
+
+.formError .formErrorArrow .line2 {
+	width: 3px;
+	border: none;
+	background: #ddd!important;
+}
+
+.formError .formErrorArrow .line1 {
+	width: 1px;
+	border: none;
+	background: #ddd!important;
+}
+
+.form_input .mce-panel iframe{
+	width: 99.9999%!important;
+}
+@media only screen and (max-width: 767px) {
+	.formError{
+		left: 0!important;
+	}
+}
+
+
+
+
+
+.dg-form-content.form-background.dark .form-control-wrap input[type=text],
+.dg-form-content.form-background.dark .form-control-wrap input[type=email],
+.dg-form-content.form-background.dark .form-control-wrap input[type=url],
+.dg-form-content.form-background.dark .form-control-wrap input[type=tel],
+.dg-form-content.form-background.dark .form-control-wrap input[type=number],
+.dg-form-content.form-background.dark .form-control-wrap input[type=date],
+.dg-form-content.form-background.dark .form-control-wrap select,
+.dg-form-content.form-background.dark .form-control-wrap textarea,
+.dg-form-content.form-background.dark .fixline:before {
+	background-color:#f5f5f5;
+    color: #424242;
+	border-color:#f5f5f5;
+ 
+}
+.dg-form-content.form-background.dark,
+.dg-form-content.form-background.dark span,
+.dg-form-content.form-background.dark label.valid,
+.dg-form-content.form-background.dark li:not(.from-footer) input,
+.dg-form-content.form-background.dark select,
+.dg-form-content.form-background.dark textarea {
+	color: #424242;
+}
+.dg-form-content.form-background.dark label{
+    color: #424242;
+}
+
+.dg-form-content.form-border.dark .form-control-wrap input[type=text],
+.dg-form-content.form-border.dark .form-control-wrap input[type=email],
+.dg-form-content.form-border.dark .form-control-wrap input[type=url],
+.dg-form-content.form-border.dark .form-control-wrap input[type=tel],
+.dg-form-content.form-border.dark .form-control-wrap input[type=number],
+.dg-form-content.form-border.dark .form-control-wrap input[type=date],
+.dg-form-content.form-border.dark .form-control-wrap select,
+.dg-form-content.form-border.dark .form-control-wrap textarea,
+.dg-form-content.form-border.dark .fixline:before {
+	border-color:#d5d5d5
+}
+
+.dg-form-content.form-border.dark,
+.dg-form-content.form-border.dark span,
+.dg-form-content.form-border.dark label,
+.dg-form-content.form-border.dark label.valid,
+.dg-form-content.form-border.dark li:not(.from-footer) input,
+.dg-form-content.form-border.dark select,
+.dg-form-content.form-border.dark textarea {
+	color:#666666;
+}
+
+.dg-form-content.form-line.dark .form-control-wrap input[type=text],
+.dg-form-content.form-line.dark .form-control-wrap input[type=email],
+.dg-form-content.form-line.dark .form-control-wrap input[type=url],
+.dg-form-content.form-line.dark .form-control-wrap input[type=tel],
+.dg-form-content.form-line.dark .form-control-wrap input[type=number],
+.dg-form-content.form-line.dark .form-control-wrap input[type=date],
+.dg-form-content.form-line.dark .form-control-wrap select,
+.dg-form-content.form-line.dark .form-control-wrap textarea,
+.dg-form-content.form-line.dark .fixline:before {
+	border-bottom-color:#c8c8c8;
+}
+.dg-form-content.form-line.dark,
+.dg-form-content.form-line.dark span,
+.dg-form-content.form-line.dark label,
+.dg-form-content.form-line.dark label.valid,
+.dg-form-content.form-line.dark li:not(.from-footer) input,
+.dg-form-content.form-line.dark select,
+.dg-form-content.form-line.dark textarea {
+	color:#666666;
+}
+
+
+
+
+.dg-form-content.form-background.light .form-control-wrap input[type=text],
+.dg-form-content.form-background.light .form-control-wrap input[type=email],
+.dg-form-content.form-background.light .form-control-wrap input[type=url],
+.dg-form-content.form-background.light .form-control-wrap input[type=tel],
+.dg-form-content.form-background.light .form-control-wrap input[type=number],
+.dg-form-content.form-background.light .form-control-wrap input[type=date],
+.dg-form-content.form-background.light .form-control-wrap select,
+.dg-form-content.form-background.light .form-control-wrap textarea,
+.dg-form-content.form-background.light .fixline:before {
+	background-color:rgba(210, 210, 210, 0.1);
+	color: #fff;
+	border: 1px solid #c1c2c3;   
+ }
+.dg-form-content.form-background.light,
+.dg-form-content.form-background.light span,
+.dg-form-content.form-background.light label.valid,
+.dg-form-content.form-background.light li:not(.from-footer) input,
+.dg-form-content.form-background.light select,
+.dg-form-content.form-background.light textarea {
+	color: #fff;
+}
+.dg-form-content.form-background.light label{
+	color: #fff;
+}
+
+.dg-form-content.form-border.light .form-control-wrap input[type=text],
+.dg-form-content.form-border.light .form-control-wrap input[type=email],
+.dg-form-content.form-border.light .form-control-wrap input[type=url],
+.dg-form-content.form-border.light .form-control-wrap input[type=tel],
+.dg-form-content.form-border.light .form-control-wrap input[type=number],
+.dg-form-content.form-border.light .form-control-wrap input[type=date],
+.dg-form-content.form-border.light .form-control-wrap select,
+.dg-form-content.form-border.light .form-control-wrap textarea,
+.dg-form-content.form-border.light .fixline:before {
+	border-color:#ffffff
+}
+
+.dg-form-content.form-border.light,
+.dg-form-content.form-border.light span,
+.dg-form-content.form-border.light label,
+.dg-form-content.form-border.light label.valid,
+.dg-form-content.form-border.light li:not(.from-footer) input,
+.dg-form-content.form-border.light select,
+.dg-form-content.form-border.light textarea {
+	color:#ffffff;
+}
+
+.dg-form-content.form-line.light .form-control-wrap input[type=text],
+.dg-form-content.form-line.light .form-control-wrap input[type=email],
+.dg-form-content.form-line.light .form-control-wrap input[type=url],
+.dg-form-content.form-line.light .form-control-wrap input[type=tel],
+.dg-form-content.form-line.light .form-control-wrap input[type=number],
+.dg-form-content.form-line.light .form-control-wrap input[type=date],
+.dg-form-content.form-line.light .form-control-wrap select,
+.dg-form-content.form-line.light .form-control-wrap textarea,
+.dg-form-content.form-line.light .fixline:before {
+	border-bottom-color:#ffffff;
+}
+.dg-form-content.form-line.light,
+.dg-form-content.form-line.light span,
+.dg-form-content.form-line.light label,
+.dg-form-content.form-line.light label.valid,
+.dg-form-content.form-line.light li:not(.from-footer) input,
+.dg-form-content.form-line.light select,
+.dg-form-content.form-line.light textarea {
+	color:#ffffff;
+}
+
+
+.dg-form-content.display-shadow .form-control-wrap input[type=text],
+.dg-form-content.display-shadow .form-control-wrap input[type=email],
+.dg-form-content.display-shadow .form-control-wrap input[type=url],
+.dg-form-content.display-shadow .form-control-wrap input[type=tel],
+.dg-form-content.display-shadow .form-control-wrap input[type=number],
+.dg-form-content.display-shadow .form-control-wrap input[type=date],
+.dg-form-content.display-shadow .form-control-wrap select,
+.dg-form-content.display-shadow .form-control-wrap textarea{
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
