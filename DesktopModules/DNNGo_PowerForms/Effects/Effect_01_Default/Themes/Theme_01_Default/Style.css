@@ -71,7 +71,7 @@
 	-webkit-box-shadow: none;
 	box-shadow: none;
 	margin: 0;
-	-webkit-appearance: none;
+	/* -webkit-appearance: none; */
 }
 .dg-form-content .form-control-wrap select[multiple],
 .dg-form-content .form-control-wrap select[size]{

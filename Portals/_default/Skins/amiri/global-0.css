@@ -2,6 +2,75 @@
 ul.fixed-widget-list {
 	display: none !important;
 }
+
+
+
+#form_div_442 .actionMenu {
+	display: none;
+}
+
+#form_div_442 .form_list>li {
+	padding: 0px 0px 20px 30px;
+}
+
+#form_div_442 .form_list {
+	margin: 0 0 0 -30px
+}
+
+.form_captcha {
+	position: relative;
+}
+
+.g-recaptcha-dnn {
+	padding-bottom: 20px;
+}
+
+.form_captcha .g-recaptcha-msg {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+	white-space: nowrap;
+	line-height: 1;
+}
+
+#form_div_442 .form-background .form-control-wrap input[type=text],
+#form_div_442 .form-background .form-control-wrap input[type=email],
+#form_div_442 .form-background .form-control-wrap input[type=url],
+#form_div_442 .form-background .form-control-wrap input[type=tel],
+#form_div_442 .form-background .form-control-wrap input[type=number],
+#form_div_442 .form-background .form-control-wrap input[type=date],
+#form_div_442 .form-background .form-control-wrap select,
+#form_div_442 .form-background .form-control-wrap textarea,
+#form_div_442 .form-background .fixline:before {
+	background-color: rgba(228, 228, 228, 1);
+	color: #333;
+	border-color: #c8c8c8;
+
+}
+
+#form_div_442 .form-background .form-control-wrap,
+#form_div_442 .form-background .form-control-wrap span,
+#form_div_442 .form-background .form-control-wrap label.valid,
+#form_div_442 .form-background .form-control-wrap input,
+#form_div_442 .form-background .form-control-wrap select,
+#form_div_442 .form-background .form-control-wrap textarea {
+	color: #333;
+}
+
+#form_div_442 .form-background .form-control-wrap label {
+	color: #fff;
+}
+
+#form_div_442 .formError .formErrorContent,
+#form_div_442 .formError .formErrorArrow div {
+	color: #ffffff;
+	background-color: #ee0101;
+}
+
+
+/* above here put in this file by malcolm */
 	
 .dng-main{
 	 background-color:#FFFFFF;  	}
