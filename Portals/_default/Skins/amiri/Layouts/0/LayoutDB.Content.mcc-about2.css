@@ -1,0 +1,11 @@
+﻿ #row-850229{background-color:#f2f2f2!important;}#row-552627{background-image:url("/Visual/ThemePluginPro/uploads/2019/12/2/solar-bg-3.jpg");background-repeat:no-repeat;background-size:cover;background-position:center center!important;}#row-552627{position:relative}#row-552627:before{
+				content:"";
+				position: absolute;
+				top:0;
+				left:0;
+				right:0;
+				bottom:0;
+				display: block;
+				pointer-events:none;
+				background-color:rgba(0,0,0,0.66);
+			}#column-101912{background-color:#f2f2f2;}#column-908048{background-image:url("/Visual/ThemePluginPro/uploads/2019/12/4/solar-bg-4.1.jpg");background-repeat:no-repeat;background-position:center center;}
