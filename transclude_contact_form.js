@@ -1,3 +1,5 @@
+// index.html has its own form, for loading-speed reasons
+// although lets face it this site is already absurd
 ;(function () {
   const theHtml = `<!-- Start New Mailto-Based Contact Form -->
   <div id="contact_via_mailto" class="DNNModuleContent ModDNNGoPowerFormsC">
