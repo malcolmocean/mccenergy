@@ -24,3 +24,9 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Local Claude Code settings (per-machine; not part of the website)
+.claude/settings.local.json
+
+# Working documents that aren't part of the published site
+*.docx

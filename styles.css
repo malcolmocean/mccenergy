@@ -1,0 +1,392 @@
+/* =========================================================================
+   MCC Energy Strategies Inc. — site stylesheet
+   Clean rewrite (replaces the old DotNetNuke theme).
+   One stylesheet for every page. Edit colours/fonts in :root below.
+   ========================================================================= */
+
+:root {
+  --green:      #00c110;   /* MCC brand green (logo + accents)        */
+  --green-dark: #009c0d;   /* darker green for button hover           */
+  --ink:        #333333;   /* main body text                          */
+  --muted:      #6f6f6f;   /* secondary text                          */
+  --line:       #e2e2e2;   /* hairline borders                        */
+  --bg-light:   #f5f6f7;   /* light grey section background           */
+  --dark:       #1f2d27;   /* dark (green-tinted) section background   */
+  --maxw:       1140px;    /* page content max width                  */
+}
+
+/* ----- Base ------------------------------------------------------------ */
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: "Montserrat", "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+  color: var(--ink);
+  line-height: 1.65;
+  background: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 { font-weight: 600; line-height: 1.25; margin: 0 0 .5em; }
+p { margin: 0 0 1em; }
+
+a { color: var(--green); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+img { max-width: 100%; height: auto; }
+
+/* Width-constrained wrapper used inside every section */
+.container { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
+
+/* Vertical rhythm for sections */
+.section { padding: 80px 0; }
+@media (max-width: 768px) { .section { padding: 50px 0; } }
+
+.text-center { text-align: center; }
+
+/* Green accent helpers */
+.accent { color: var(--green); }
+
+/* Section heading with a short green underline (matches old .am-title-5) */
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+  padding-bottom: 20px;
+}
+.heading::after {
+  content: "";
+  position: absolute;
+  left: 50%; bottom: 0;
+  transform: translateX(-50%);
+  width: 60px; height: 3px;
+  background: var(--green);
+}
+
+/* ----- Buttons --------------------------------------------------------- */
+.btn {
+  display: inline-block;
+  background: var(--green);
+  color: #fff;
+  font-weight: 600;
+  font-size: .95rem;
+  padding: 13px 28px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background .2s ease;
+}
+.btn:hover { background: var(--green-dark); color: #fff; text-decoration: none; }
+
+/* ----- Header / navigation -------------------------------------------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 1px 6px rgba(0,0,0,.05);
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 14px 20px;
+  max-width: var(--maxw);
+  margin: 0 auto;
+}
+.nav__logo { flex: none; }                 /* never let the wide logo get squished */
+.nav__logo img { height: 46px; width: auto; display: block; }
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+  margin: 0; padding: 0;
+}
+.nav__links a {
+  color: var(--ink);
+  font-weight: 500;
+  font-size: .95rem;
+  padding: 6px 0;
+}
+.nav__links a:hover,
+.nav__links a.active { color: var(--green); text-decoration: none; }
+
+/* Mobile menu toggle (hidden on desktop) */
+.nav__toggle {
+  display: none;
+  background: none;
+  border: 0;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--ink);
+}
+
+@media (max-width: 860px) {
+  .nav__toggle { display: block; }
+  .nav__logo img { height: 40px; }
+  .nav__links {
+    display: none;
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    flex-direction: column;
+    gap: 0;
+    background: #fff;
+    border-bottom: 1px solid var(--line);
+    padding: 8px 20px 16px;
+  }
+  .nav__links.open { display: flex; }
+  .nav__links li { border-top: 1px solid var(--line); }
+  .nav__links a { display: block; padding: 12px 0; }
+  .nav__cta { display: none; } /* keep the bar tidy on small screens */
+}
+
+/* ----- Hero ------------------------------------------------------------ */
+.hero {
+  background: linear-gradient(rgba(255,255,255,.45), rgba(255,255,255,.65)),
+              url("/Visual/windmills-bg.jpg") center/cover no-repeat;
+  padding: 110px 0;
+}
+.hero__box {
+  max-width: 620px;
+}
+.hero h1 {
+  font-size: 2.4rem;
+  background: rgba(255,255,255,.85);
+  border: 1px solid #cfcfcf;
+  padding: 18px 22px;
+  display: inline-block;
+}
+.hero p {
+  font-size: 1.1rem;
+  background: rgba(255,255,255,.8);
+  padding: 10px 14px;
+  display: inline-block;
+}
+@media (max-width: 768px) { .hero h1 { font-size: 1.7rem; } }
+
+/* ----- Generic cards / grids ------------------------------------------ */
+.grid { display: grid; gap: 30px; }
+.grid--4 { grid-template-columns: repeat(4, 1fr); }
+.grid--3 { grid-template-columns: repeat(3, 1fr); }
+.grid--2 { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 900px) { .grid--4, .grid--3 { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .grid--4, .grid--3, .grid--2 { grid-template-columns: 1fr; } }
+@media (max-width: 480px) { .nav__logo img { height: 34px; } }
+
+/* Icon + text info card ("What's stopping you") */
+.info {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.info img { width: 54px; height: 54px; flex: none; }
+.info h4 { font-size: 1.05rem; margin-bottom: .35em; }
+.info p { font-size: .92rem; color: var(--muted); margin: 0; }
+
+/* Centered icon card ("Wasted energy can lead to") */
+.iconcard { text-align: center; padding: 20px; }
+.iconcard img { width: 62px; height: 62px; margin-bottom: 14px; }
+.iconcard h4 { font-size: 1rem; font-weight: 500; }
+
+/* Service block (Efficiency Audits / Implementation / Analysis) */
+.service { margin-bottom: 28px; }
+.service img { height: 50px; width: auto; margin-bottom: 10px; }
+.service h3 { font-size: 1.2rem; }
+.service p { font-size: .95rem; color: var(--muted); }
+
+/* Checklist */
+.checklist { list-style: none; padding: 0; margin: 0 0 1em; }
+.checklist li { position: relative; padding-left: 28px; margin-bottom: 10px; }
+.checklist li::before {
+  content: "\2713";              /* check mark */
+  position: absolute; left: 0; top: 0;
+  color: var(--green); font-weight: 700;
+}
+
+/* ----- Dark call-to-action banner ------------------------------------- */
+.cta-band {
+  background: linear-gradient(rgba(31,45,39,.62), rgba(31,45,39,.74)),
+              url("/Visual/windmills-bg.jpg") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+}
+.cta-band h2 { color: #fff; font-size: 1.9rem; }
+.cta-band h4 { color: #d7e6dd; font-weight: 400; margin-bottom: 1.5em; }
+
+/* ----- Two-column intro (text + services) ----------------------------- */
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: start; }
+@media (max-width: 860px) { .split { grid-template-columns: 1fr; } }
+.note { font-size: .8rem; color: #a6a6a6; }
+
+/* ----- Testimonials ---------------------------------------------------- */
+/* Dark solar-panel backdrop behind the quote card */
+.testimonial-band {
+  background: linear-gradient(rgba(31,45,39,.55), rgba(31,45,39,.7)),
+              url("/Visual/ThemePluginPro/uploads/2019/12/2/solar-bg-1.1.jpg") center/cover no-repeat;
+}
+.quote {
+  background: var(--bg-light);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--green);
+  padding: 28px 30px;
+  border-radius: 4px;
+}
+.quote p { font-style: italic; }
+.quote cite { font-style: normal; font-weight: 600; display: block; margin-top: 10px; }
+.quote cite span { color: var(--green); font-weight: 400; }
+
+/* ----- News / portfolio cards ----------------------------------------- */
+.card {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.card__img { aspect-ratio: 3 / 2; object-fit: cover; width: 100%; }
+.card__body { padding: 18px 20px; }
+.card__body h3 { font-size: 1.05rem; }
+.card__body .link { font-weight: 600; font-size: .85rem; letter-spacing: .03em; }
+.card__body .ext { font-size: .75rem; color: var(--muted); }
+
+/* ----- Associate logos ------------------------------------------------- */
+/* Each logo sits in its own white tile so their mismatched backgrounds
+   (red, grey, white) read as one tidy set. */
+.logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 18px;
+}
+.logo-tile {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 22px;
+}
+.logo-tile img { max-height: 100%; max-width: 100%; width: auto; object-fit: contain; }
+
+/* Contained logo area for the About-page associate cards (keeps small logos
+   crisp — no stretching or cropping). */
+.assoc-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+  height: 110px;
+  padding: 16px 20px;
+}
+.assoc-logo img { max-height: 100%; max-width: 100%; width: auto; object-fit: contain; }
+
+/* ----- Contact form ---------------------------------------------------- */
+/* Roof-mounted solar backdrop behind the contact section */
+.contact-band {
+  background: linear-gradient(rgba(31,45,39,.78), rgba(31,45,39,.86)),
+              url("/Visual/ThemePluginPro/uploads/2019/12/2/solar-bg-3.jpg") center/cover no-repeat;
+}
+.contact-band h3, .contact-band p, .contact-band .field label { color: #fff; }
+.contact-band .accent { color: var(--green); }
+
+.contact { display: grid; grid-template-columns: 1fr 1.4fr; gap: 50px; align-items: start; }
+@media (max-width: 860px) { .contact { grid-template-columns: 1fr; } }
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+@media (max-width: 500px) { .form-grid { grid-template-columns: 1fr; } }
+.field { display: flex; flex-direction: column; }
+.field label { font-size: .85rem; font-weight: 500; margin-bottom: 5px; }
+.field input, .field select {
+  font: inherit;
+  padding: 10px 12px;
+  border: 1px solid #c8c8c8;
+  border-radius: 4px;
+  background: #fff;
+}
+.field--full { grid-column: 1 / -1; }
+.req { color: var(--green); }
+
+/* ----- Lead paragraph (intro text on interior pages) ------------------- */
+.lead { font-size: 1.15rem; font-weight: 500; color: var(--ink); }
+
+/* ----- Skill / experience bars ---------------------------------------- */
+.skill { margin-bottom: 18px; }
+.skill h4 { font-size: 1rem; font-weight: 500; margin-bottom: 8px; }
+.skill__track { background: #e4e7e5; border-radius: 20px; height: 10px; overflow: hidden; }
+.skill__fill { background: var(--green); height: 100%; border-radius: 20px; }
+
+/* Tag pills (insights) */
+.tags { margin: 6px 0 12px; font-size: .8rem; color: var(--muted); }
+.tags a { color: var(--muted); }
+
+/* Date badge for article list */
+.post { display: grid; grid-template-columns: 70px 1fr; gap: 22px; padding: 26px 0; border-bottom: 1px solid var(--line); }
+.post:last-child { border-bottom: 0; }
+.post__date { text-align: center; background: var(--green); color: #fff; border-radius: 6px; padding: 10px 0; height: fit-content; font-weight: 600; }
+.post__date .day { font-size: 1.5rem; line-height: 1; display: block; }
+.post__date .mon { font-size: .8rem; text-transform: uppercase; }
+.post h3 { font-size: 1.25rem; margin-bottom: .4em; }
+.post h3 a { color: var(--ink); }
+.post h3 a:hover { color: var(--green); }
+@media (max-width: 500px) { .post { grid-template-columns: 1fr; } .post__date { width: 70px; } }
+
+/* ----- Article (single Insights post) --------------------------------- */
+.article { max-width: 760px; }
+.article h1 { font-size: 2rem; }
+.article__meta { color: var(--muted); font-size: .9rem; margin: .25rem 0 2rem; padding-bottom: 1.2rem; border-bottom: 1px solid var(--line); }
+.article__body p { margin-bottom: 1.2em; }
+.article__body ul, .article__body ol { padding-left: 1.3rem; margin-bottom: 1.2em; }
+.article__body li { margin-bottom: .5em; }
+.article__body .ref { font-size: .85rem; color: var(--muted); }
+.article__back { display: inline-block; margin-top: 2.5rem; font-weight: 600; }
+.data-table { border-collapse: collapse; width: 100%; margin: 0 0 1.2em; }
+.data-table th, .data-table td { border: 1px solid var(--line); padding: 9px 12px; text-align: left; font-size: .92rem; vertical-align: top; }
+.data-table th { background: var(--bg-light); font-weight: 600; }
+
+/* ----- Footer ---------------------------------------------------------- */
+.site-footer { background: var(--bg-light); border-top: 1px solid var(--line); }
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 40px;
+  padding: 60px 0 40px;
+}
+@media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; gap: 30px; } }
+.site-footer img { height: 42px; width: auto; margin-bottom: 14px; }
+.site-footer h5 { font-size: 1rem; text-transform: uppercase; letter-spacing: .04em; }
+.footer-links { list-style: none; padding: 0; margin: 0; }
+.footer-links li { margin-bottom: 8px; }
+.footer-links a { color: var(--ink); }
+.footer-links a:hover { color: var(--green); }
+.footer-links .arrow { color: var(--green); margin-right: 8px; }
+.footer-bottom {
+  border-top: 1px solid var(--line);
+  padding: 18px 0;
+  font-size: .85rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* Simple page banner for interior pages */
+.page-banner {
+  background: linear-gradient(rgba(31,45,39,.6), rgba(31,45,39,.72)),
+              url("/Visual/windmills-bg.jpg") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 70px 0;
+}
+.page-banner h1 { color: #fff; font-size: 2.3rem; margin: 0; }
