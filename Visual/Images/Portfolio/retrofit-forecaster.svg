@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#e9f5ec"/>
+  <!-- baseline -->
+  <line x1="70" y1="300" x2="530" y2="300" stroke="#9cc7a8" stroke-width="3"/>
+
+  <!-- house (left) -->
+  <g fill="#ffffff" stroke="#1f7a2e" stroke-width="7" stroke-linejoin="round">
+    <path d="M110 175 L195 105 L280 175 Z"/>
+    <rect x="130" y="175" width="130" height="125"/>
+  </g>
+  <rect x="178" y="235" width="34" height="65" fill="#1f7a2e"/>
+
+  <!-- forecast bars (right), ascending -->
+  <g fill="#00c110">
+    <rect x="320" y="232" width="40" height="68" rx="3"/>
+    <rect x="375" y="192" width="40" height="108" rx="3"/>
+    <rect x="430" y="150" width="40" height="150" rx="3"/>
+    <rect x="485" y="108" width="40" height="192" rx="3"/>
+  </g>
+
+  <!-- upward trend line + arrow -->
+  <polyline points="320,210 380,178 435,140 500,96" fill="none" stroke="#1f7a2e" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M500 96 l-22 4 M500 96 l-4 22" fill="none" stroke="#1f7a2e" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- leaf accent -->
+  <path d="M250 340 C265 320 295 318 320 322 C312 348 285 360 258 356 Z" fill="#00c110"/>
+  <path d="M258 354 C275 344 295 332 318 324" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

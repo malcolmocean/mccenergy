@@ -251,7 +251,29 @@ img { max-width: 100%; height: auto; }
   display: flex;
   flex-direction: column;
 }
-.card__img { aspect-ratio: 3 / 2; object-fit: cover; width: 100%; }
+.card__img { aspect-ratio: 3 / 2; object-fit: cover; width: 100%; display: block; }
+
+/* Image area that can hold an overlaid badge (e.g. a logo on a photo) */
+.card__media { position: relative; line-height: 0; }
+.card__media > a { display: block; }
+.overlay-badge {
+  position: absolute;
+  left: 4%;
+  bottom: 5%;
+  width: 46%;
+  max-width: 250px;
+  z-index: 2;
+  display: block;
+}
+.overlay-badge img {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #fff;
+  padding: 7px 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.4);
+}
 .card__body { padding: 18px 20px; }
 .card__body h3 { font-size: 1.05rem; }
 .card__body .link { font-weight: 600; font-size: .85rem; letter-spacing: .03em; }
