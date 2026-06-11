@@ -41,8 +41,8 @@ img { max-width: 100%; height: auto; }
 .container { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
 
 /* Vertical rhythm for sections */
-.section { padding: 80px 0; }
-@media (max-width: 768px) { .section { padding: 50px 0; } }
+.section { padding: 50px 0; }
+@media (max-width: 768px) { .section { padding: 34px 0; } }
 
 .text-center { text-align: center; }
 
@@ -105,7 +105,7 @@ img { max-width: 100%; height: auto; }
 .nav__links {
   list-style: none;
   display: flex;
-  gap: 28px;
+  gap: 22px;
   margin: 0; padding: 0;
 }
 .nav__links a {
@@ -116,6 +116,9 @@ img { max-width: 100%; height: auto; }
 }
 .nav__links a:hover,
 .nav__links a.active { color: var(--green); text-decoration: none; }
+
+/* Compact green Contact Us button in the nav */
+.nav__cta { font-size: 0.85rem; padding: 9px 18px; white-space: nowrap; }
 
 /* Mobile menu toggle (hidden on desktop) */
 .nav__toggle {
@@ -151,7 +154,7 @@ img { max-width: 100%; height: auto; }
 .hero {
   background: linear-gradient(rgba(255,255,255,.45), rgba(255,255,255,.65)),
               url("/Visual/windmills-bg.jpg") center/cover no-repeat;
-  padding: 110px 0;
+  padding: 80px 0;
 }
 .hero__box {
   max-width: 620px;
@@ -383,7 +386,7 @@ img { max-width: 100%; height: auto; }
 .site-footer { background: var(--bg-light); border-top: 1px solid var(--line); }
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr;
+  grid-template-columns: 1.4fr 1fr;
   gap: 40px;
   padding: 60px 0 40px;
 }
