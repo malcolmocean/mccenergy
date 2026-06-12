@@ -1,0 +1,13 @@
+# Treat image and other binary assets as binary so git never alters their bytes
+# (this repo has core.autocrlf=true, which can corrupt binaries otherwise).
+*.ico   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.webp  binary
+*.eot   binary
+*.ttf   binary
+*.woff  binary
+*.woff2 binary
+*.pdf   binary
