@@ -162,7 +162,7 @@ img { max-width: 100%; height: auto; }
   position: absolute;
   inset: 0;
   z-index: 0;
-  background: url("/Visual/windmills-bg.jpg") center/cover no-repeat;
+  background: url("/Visual/windmills-bg.jpg") center bottom/cover no-repeat;
   filter: contrast(1.25) saturate(1.2) brightness(0.95);
 }
 .hero > .container { position: relative; z-index: 1; }
