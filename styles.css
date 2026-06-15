@@ -258,6 +258,11 @@ img { max-width: 100%; height: auto; }
   padding: 28px 30px;
   border-radius: 4px;
 }
+/* Masonry-style testimonial layout: lets short quotes stagger vertically
+   instead of stretching to match the tallest quote in their row. */
+.testimonial-cols { column-count: 2; column-gap: 30px; }
+.testimonial-cols .quote { break-inside: avoid; margin: 0 0 30px; }
+@media (max-width: 600px) { .testimonial-cols { column-count: 1; } }
 .quote p { font-style: italic; }
 .quote cite { font-style: normal; font-weight: 600; display: block; margin-top: 10px; }
 .quote cite span { color: var(--green); font-weight: 400; }
